@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Setting:</strong>
+  <%= @option.setting %>
+</p>
+
+<p>
+  <strong>Input:</strong>
+  <%= @option.input %>
+</p>
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>
