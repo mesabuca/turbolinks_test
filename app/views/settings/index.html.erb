@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <h1>Settings</h1>
 
@@ -25,3 +25,14 @@
 <br>
 
 <%= link_to 'New Setting', new_setting_path %>
+-->
+
+
+<div class="middle">
+  <% @settings.each do |setting| %>
+      <%= link_to setting.name, render_form_path %>
+  <% end %>
+</div>
+<div id="permenant">
+<!--  <%= render 'form' %>-->
+</div>
